@@ -1,0 +1,36 @@
+# .github/workflows/main.yml
+name: Deploy when push 
+ 
+on:
+  push:
+    branches:
+      - main
+ 
+jobs:
+  build:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: 🚚 Get latest code from main branch
+      uses: actions/checkout@v2
+      with:
+        ref: main
+       
+    - name: Push to server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT }}
+        key: ${{ secrets.SSHKEY }}
+        script: cd ${{ secrets.PROJECT_PATH }} && git pull
+ 
+    - name: Executing remote command if need
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PORT: ${{ secrets.PORT }}
+        KEY: ${{ secrets.SSHKEY }}
+        script: cd ${{ secrets.PROJECT_PATH }} && docker-compose build && docker-compose up -d --force-recreate
