@@ -14,12 +14,12 @@ const Webtrader = () => {
       <Hero heading="Our Webtrader Platform" img={bgImg} />
       <section className="webTrader">
         <p className="webTrader__text">
-          CapitalCo.Pro is providing a new web based trading platform that runs on
-          both PC and Mac. This platform, broadens our reach and addresses some
-          ongoing needs of our clients who require a stable and flexible trading
-          solution to access global forex markets. Our webtrader has been built
-          with one purpose in mind and that's to improve the trading experience
-          of our clients.
+          Capitalco.live is providing a new web based trading platform that runs
+          on both PC and Mac. This platform, broadens our reach and addresses
+          some ongoing needs of our clients who require a stable and flexible
+          trading solution to access global forex markets. Our webtrader has
+          been built with one purpose in mind and that's to improve the trading
+          experience of our clients.
         </p>
         <h2 className="webTrader__heading">KEY FEATURES INCLUDE</h2>
         <div className="webTrader__info">

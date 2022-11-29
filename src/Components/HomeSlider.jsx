@@ -32,7 +32,7 @@ const Slider = () => {
                 <p> - Weekly webinars with live Q&A</p>
               </div>
               <a
-                to="https://client.capitalco.pro/register"
+                to="https://client.capitalco.live/register"
                 className="open__acc"
               >
                 Open Account
@@ -61,7 +61,7 @@ const Slider = () => {
                 <p>- Crypto - Indices - Equities </p>
               </div>
               <a
-                to="https://client.capitalco.pro/register"
+                to="https://client.capitalco.live/register"
                 className="open__acc"
               >
                 Open Account
@@ -88,7 +88,7 @@ const Slider = () => {
                 <p>-Dynamic order routing</p>
               </div>
               <a
-                to="https://client.capitalco.pro/register"
+                to="https://client.capitalco.live/register"
                 className="open__acc"
               >
                 Open Account

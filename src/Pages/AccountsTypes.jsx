@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../Components/Hero";
 import { AiFillCheckCircle } from "react-icons/ai";
 import ContactUs from "../Components/ContactUs";
 import heroBg from "../Assets/accountsHero.png";
 const AccountsTypes = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Hero heading="Account Types" img={heroBg} />
@@ -11,8 +14,8 @@ const AccountsTypes = () => {
         <div className="accountTypes__single">
           <h2 className="accountTypes__single-heading">Test account</h2>
           <p className="accountTypes__single-text">
-            This is the is most affordable, and is convenient for individuals on a
-            constraint budget to get their products off the ground and in the
+            This is the is most affordable, and is convenient for individuals on
+            a constraint budget to get their products off the ground and in the
             hands of their users.
           </p>
           <div className="accountTypes__single-info">
@@ -25,7 +28,6 @@ const AccountsTypes = () => {
               <AiFillCheckCircle />
               <p>professional investment plan</p>
             </div>
-           
           </div>
           <hr className="accountTypes__single-line" />
           <div className="accountTypes__single-pricing">
@@ -36,8 +38,8 @@ const AccountsTypes = () => {
         <div className="accountTypes__single">
           <h2 className="accountTypes__single-heading">Silver account </h2>
           <p className="accountTypes__single-text">
-            This is the is most affordable, and is convenient for individuals on a
-            constraint budget to get their products off the ground and in the
+            This is the is most affordable, and is convenient for individuals on
+            a constraint budget to get their products off the ground and in the
             hands of their users.
           </p>
           <div className="accountTypes__single-info">
@@ -64,8 +66,8 @@ const AccountsTypes = () => {
         <div className="accountTypes__single">
           <h2 className="accountTypes__single-heading">Gold account</h2>
           <p className="accountTypes__single-text">
-            This is the is most affordable, and is convenient for individuals on a
-            constraint budget to get their products off the ground and in the
+            This is the is most affordable, and is convenient for individuals on
+            a constraint budget to get their products off the ground and in the
             hands of their users.
           </p>
           <div className="accountTypes__single-info">
@@ -96,8 +98,8 @@ const AccountsTypes = () => {
         <div className="accountTypes__single">
           <h2 className="accountTypes__single-heading">Vip account</h2>
           <p className="accountTypes__single-text">
-            This is the is most affordable, and is convenient for individuals on a
-            constraint budget to get their products off the ground and in the
+            This is the is most affordable, and is convenient for individuals on
+            a constraint budget to get their products off the ground and in the
             hands of their users.
           </p>
           <div className="accountTypes__single-info">
@@ -105,7 +107,6 @@ const AccountsTypes = () => {
             <div className="accountTypes__single-info_single">
               <AiFillCheckCircle />
               <p>private account manager</p>
-              
             </div>
             <div className="accountTypes__single-info_single">
               <AiFillCheckCircle />
@@ -119,7 +120,7 @@ const AccountsTypes = () => {
               <AiFillCheckCircle />
               <p>full access to all the assets</p>
             </div>
-           
+
             <div className="accountTypes__single-info_single">
               <AiFillCheckCircle />
               <p>no spread or swaps</p>
@@ -128,7 +129,6 @@ const AccountsTypes = () => {
           <hr className="accountTypes__single-line" />
           <div className="accountTypes__single-pricing">
             <h2>250k +</h2>
-           
           </div>
           <button className="accountTypes__single-btn">Choose</button>
         </div>

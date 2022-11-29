@@ -41,7 +41,7 @@ const Home = () => {
                 <li>- Equities</li>
               </ul>
               <a
-                href="https://client.capitalco.pro/register"
+                href="https://client.capitalco.live/register"
                 className="open__acc"
               >
                 Open Account
@@ -54,7 +54,7 @@ const Home = () => {
         <div className="aboutus__content">
           <h2>About Us</h2>
           <p>
-            CapitalCo.Pro was launched a few years back with a unique vision to
+            CapitalCo.live was launched a few years back with a unique vision to
             provide unparalleled advanced trading conditions, premium education,
             and state-of-the-art trading tools in the Forex industry. Due to the
             continuous focus on localizing our products and services to suit
@@ -73,12 +73,12 @@ const Home = () => {
             investments is our passion.
           </p>
           <p>
-            At CapitalCo.Pro we are committed to making sure all our clients and
-            investors stay connected to the various opportunities that arise in
-            the market on a daily basis and ease in connecting with one another.
-            With us as your financial stockbroker you are sure to get all the
-            professional backing and support you require to soar in Forex
-            trading.
+            At CapitalCo.live we are committed to making sure all our clients
+            and investors stay connected to the various opportunities that arise
+            in the market on a daily basis and ease in connecting with one
+            another. With us as your financial stockbroker you are sure to get
+            all the professional backing and support you require to soar in
+            Forex trading.
           </p>
         </div>
         <div className="aboutus__img">
@@ -172,8 +172,8 @@ const Home = () => {
               </div>
             </div>
             <p>
-              Thank you CapitalCo.Pro  Trading website-wise, no one else is more loved I'm very happy with the support you had
-              provided me!
+              Thank you CapitalCo.live Trading website-wise, no one else is more
+              loved I'm very happy with the support you had provided me!
             </p>
             <div className="clients__card-star">
               <BsFillStarFill />
@@ -192,7 +192,8 @@ const Home = () => {
               </div>
             </div>
             <p>
-              Top website in the world when it comes to all things investing. Thank you, for always being there to help me!  
+              Top website in the world when it comes to all things investing.
+              Thank you, for always being there to help me!
             </p>
             <div className="clients__card-star">
               <BsFillStarFill />

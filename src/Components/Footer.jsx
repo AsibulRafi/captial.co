@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import logo from "../Assets/logo.png";
 const Footer = () => {
   return (
@@ -13,30 +13,59 @@ const Footer = () => {
           <p>
             CFDs are complex instruments and come with a high risk of losing
             money rapidly due to leverage. 71.24% of retail investor accounts
-            lose money when trading CFDs with CapitalCo.Pro. You should consider
-            whether you understand how CFDs work and whether you can afford to
-            take the high risk of losing your money.{" "}
+            lose money when trading CFDs with CapitalCo.live. You should
+            consider whether you understand how CFDs work and whether you can
+            afford to take the high risk of losing your money.
           </p>
-        <div style={{display: "flex"}}>
-           <div style={{position:"relative", width:"120px", height:"60px",margin:"20px"}}>
-            <a href="https://www.teamviewer.com/link/?url=842558&id=1657706082608" style={{textDecoration:"none"}}>
-              <img src="https://static.teamviewer.com/resources/badges/teamviewer_badge_flat1.png" alt="Download TeamViewer Remote Control" title="Download TeamViewer Remote Control" border="0" width="120" height="60" />
-              
-            </a>
-          </div>
-          <div style={{position:"relative", width:"120px", height:"60px",margin:"20px"}}>
-            <a href="https://anydesk.com/en/downloads" target="_blank">
-          <img border="0" alt="W3Schools" src="https://anydesk.com/_static/img/logos/anydesk-logo-40fe6c.svg" width="100" height="90" />
-          </a>
-          </div>
+          <div style={{ display: "flex" }}>
+            <div
+              style={{
+                position: "relative",
+                width: "120px",
+                height: "60px",
+                margin: "20px",
+              }}
+            >
+              <a
+                href="https://www.teamviewer.com/link/?url=842558&id=1657706082608"
+                style={{ textDecoration: "none" }}
+              >
+                <img
+                  src="https://static.teamviewer.com/resources/badges/teamviewer_badge_flat1.png"
+                  alt="Download TeamViewer Remote Control"
+                  title="Download TeamViewer Remote Control"
+                  border="0"
+                  width="120"
+                  height="60"
+                />
+              </a>
+            </div>
+            <div
+              style={{
+                position: "relative",
+                width: "120px",
+                height: "60px",
+                margin: "20px",
+              }}
+            >
+              <a href="https://anydesk.com/en/downloads" target="_blank">
+                <img
+                  border="0"
+                  alt="W3Schools"
+                  src="https://anydesk.com/_static/img/logos/anydesk-logo-40fe6c.svg"
+                  width="100"
+                  height="90"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div className="footer__content-links">
           <div className="footer__content-links-single">
             <h4>Company</h4>
             <Link to="/">Home</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/about">Contact Us</Link>
+            <Link to="/about#about">About Us</Link>
+            <Link to="/about#contact">Contact Us</Link>
           </div>
           <div className="footer__content-links-single">
             <h4>Products</h4>
@@ -57,7 +86,7 @@ const Footer = () => {
         </div>
       </div>
       <h4 className="footer__copyright">
-        Copyright @ 2022 Capital Co. <br /> All rights reserved
+        Copyright @ 2022 CapitalCo.live <br /> All rights reserved
       </h4>
     </section>
   );

@@ -25,11 +25,11 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="nav__btns">
-            <a href="https://client.capitalco.pro/" className="log-in">
+            <a href="https://client.capitalco.live/" className="log-in">
               Login
             </a>
             <a
-              href="https://client.capitalco.pro/register"
+              href="https://client.capitalco.live/register"
               className="open-acc"
             >
               Open account
@@ -78,11 +78,11 @@ const Navbar = () => {
             </li>
             <li>
               <div className="mb-nav__btns">
-                <a href="https://client.capitalco.pro/" className="log-in">
+                <a href="https://client.capitalco.live/" className="log-in">
                   Login
                 </a>
                 <a
-                  href="https://client.capitalco.pro/register"
+                  href="https://client.capitalco.live/register"
                   className="open-acc"
                 >
                   Open account

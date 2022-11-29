@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hero from "../Components/Hero";
 import Slider from "../Components/Slider";
 import heroBg from "../Assets/productsHero.png";
 import ContactUs from "../Components/ContactUs";
 const Products = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Hero heading="DIVERSIFY YOUR PORTFOLIO" img={heroBg} />

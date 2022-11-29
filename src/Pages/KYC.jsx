@@ -12,7 +12,7 @@ const KYC = () => {
               Know your customer policies have become increasingly important
               worldwide lately, especially among banks and other financial
               institutions, in order to prevent identity theft, money
-              laundering, financial fraud and terrorist activity. CapitalCo.Pro
+              laundering, financial fraud and terrorist activity. Capitalco.live
               holds a zero tolerance fraud policy and is taking all measures
               possible to prevent it. Any fraudulent activity will be documented
               and all related accounts to it will be immediately closed. All
@@ -21,7 +21,7 @@ const KYC = () => {
           </div>
           <div className="flex__section">
             <p>
-              Prevention: CapitalCo.Pro aims to ensure the integrity of any
+              Prevention: Capitalco.live aims to ensure the integrity of any
               sensitive data it obtains, such as your account information and
               the transactions you make, using a variety of security measures
               and fraud controls. Securing your electronic transactions requires
@@ -68,12 +68,12 @@ const KYC = () => {
           <div className="flex__section">
             <h2>How do I know my documents are safe with you?</h2>
             <p>
-              CapitalCo.Pro holds the security of documentation with the highest
-              priority and treats all documents it receives with utmost respect
-              and confidentiality. All files we obtain are fully protected using
-              the highest level possible of encryption at every step of the
-              review process. We thank you for your cooperation in helping us
-              make CapitalCo.Pro a safer place to trade.
+              Capitalco.live holds the security of documentation with the
+              highest priority and treats all documents it receives with utmost
+              respect and confidentiality. All files we obtain are fully
+              protected using the highest level possible of encryption at every
+              step of the review process. We thank you for your cooperation in
+              helping us make Capitalco.live a safer place to trade.
             </p>
           </div>
           <div className="flex__section">
@@ -81,7 +81,7 @@ const KYC = () => {
             <p>
               Please scan your documents, or take a high-quality digital camera
               picture, save the images as jpegs, then send it to us via mail to
-              support@capitalco.pro
+              support@Capitalco.live
             </p>
           </div>
         </div>
