@@ -1,0 +1,507 @@
+.homeSlider {
+  padding: 5rem 20rem 0rem;
+  @media screen and (max-width: 1700px) {
+    padding: 5rem;
+  }
+  @include breakpoint-down(medium) {
+    padding: 5rem 4rem 0rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 2rem 0rem;
+  }
+  .rec .rec-arrow,
+  .rec .rec-dot {
+    display: none;
+  }
+  .rec .rec-carousel {
+    height: 650px;
+  }
+  .rec .rec-item-wrapper {
+    height: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    flex-basis: 50%;
+
+    @include breakpoint-down(medium) {
+      margin-right: 0rem;
+      margin-bottom: 5rem;
+      br {
+        display: none;
+      }
+    }
+    &-heading {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 70px;
+      color: #0e1035;
+      margin-bottom: 2rem;
+      @include breakpoint-down(medium) {
+        font-size: 4rem;
+        line-height: 55px;
+      }
+      @include breakpoint-down(small) {
+        font-size: 3rem;
+        line-height: 45px;
+      }
+    }
+    &-text {
+      margin-bottom: 4rem;
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: #0e1035;
+        @include breakpoint-down(medium) {
+          font-size: 18px;
+        }
+        @include breakpoint-down(small) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  &__img {
+    flex-basis: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.tradingview-widget-container {
+  iframe {
+    height: 100% !important;
+  }
+  iframe:last-child {
+    display: none;
+  }
+}
+
+.services {
+  background-color: #0e1035;
+  margin: 5rem auto;
+  &__wrapper {
+    padding: 10rem 20rem;
+    @media screen and (max-width: 1700px) {
+      padding: 10rem 5rem;
+    }
+    @include breakpoint-down(medium) {
+      padding: 8rem 4rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 5rem 2rem;
+    }
+  }
+  &__heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5rem;
+    @include breakpoint-down(medium) {
+      font-size: 4rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 3rem;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint-down(medium) {
+      flex-direction: column-reverse;
+    }
+    &-img {
+      width: 100%;
+      flex-basis: 50%;
+    }
+    &-info {
+      flex-basis: 50%;
+      margin-left: 8rem;
+      @include breakpoint-down(medium) {
+        margin-bottom: 5rem;
+        margin-left: 0rem;
+      }
+      h2 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 34px;
+        margin-bottom: 3rem;
+        color: #ffffff;
+        @include breakpoint-down(small) {
+          font-size: 22px;
+        }
+      }
+      ul {
+        text-decoration: none;
+        margin-bottom: 5rem;
+        li {
+          list-style: none;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 22px;
+          line-height: 33px;
+          color: #ffffff;
+          @include breakpoint-down(small) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+.aboutus {
+  padding: 5rem 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media screen and (max-width: 1700px) {
+    padding: 5rem 5rem;
+  }
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+    padding: 5rem 4rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 2rem;
+  }
+  &__img {
+    flex-basis: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+  &__content {
+    flex-basis: 50%;
+    margin-right: 10rem;
+    @include breakpoint-down(medium) {
+      margin-right: 0rem;
+      margin-bottom: 5rem;
+    }
+    h2 {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 55px;
+      line-height: 77px;
+      color: #0e1035;
+      margin-bottom: 3rem;
+      @include breakpoint-down(medium) {
+        font-size: 4.5rem;
+      }
+      @include breakpoint-down(small) {
+        font-size: 3.8rem;
+      }
+    }
+    p {
+      width: 642px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      color: #000000;
+      margin-bottom: 1.5rem;
+      @media screen and (max-width: 1400px) {
+        width: 100%;
+      }
+      @include breakpoint-down(medium) {
+        width: 100%;
+      }
+      @include breakpoint-down(small) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.cards {
+  background-color: #0e1035;
+  &__wrapper {
+    padding: 10rem 20rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: 1700px) {
+      padding: 10rem 5rem;
+    }
+    @media screen and (max-width: 1250px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 5rem;
+      justify-items: center;
+    }
+    @media screen and (max-width: 850px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 3rem;
+    }
+    @include breakpoint-down(medium) {
+      padding: 5rem 4rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 5rem 2rem;
+    }
+  }
+  &__single {
+    background-color: #fff;
+    width: 366px;
+    height: auto;
+    box-shadow: 0px 4px 50px rgba(116, 116, 116, 0.25);
+    border-radius: 50px;
+    @media screen and (max-width: 400px) {
+      width: 100%;
+    }
+    &-img {
+      img {
+        @media screen and (max-width: 400px) {
+          width: 100%;
+        }
+      }
+    }
+    &-content {
+      padding: 3rem 2rem;
+      h2 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #0e1035;
+        margin-bottom: 2rem;
+      }
+      ul {
+        list-style: none;
+        li {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          svg {
+            font-size: 1rem;
+            color: #c8a762;
+            margin-right: 1rem;
+            margin-top: 1rem;
+          }
+          p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #000000;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+.clients {
+  padding: 10rem 20rem;
+  @media screen and (max-width: 1700px) {
+    padding: 10rem 5rem;
+  }
+  @include breakpoint-down(medium) {
+    padding: 8rem 4rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 1rem;
+  }
+  &__heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #232323;
+    margin-bottom: 5rem;
+    @include breakpoint-down(medium) {
+      font-size: 4.5rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 3.8rem;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+  &__card {
+    padding: 2rem 2rem;
+    width: 550px;
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+    background: #ffffff;
+    box-shadow: 30px 10px 50px rgba(152, 149, 149, 0.3);
+    border-radius: 30px;
+    &:first-child {
+      margin-right: 2rem;
+      @include breakpoint-down(medium) {
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+      }
+    }
+    &-heading {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 3rem;
+      img {
+        margin-right: 2rem;
+      }
+      h4 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #232323;
+        @include breakpoint-down(small) {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        color: #9c9c9c;
+        @include breakpoint-down(small) {
+          font-size: 12px;
+        }
+      }
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 130%;
+      color: #0e1035;
+      margin-bottom: 3rem;
+      @include breakpoint-down(small) {
+        font-size: 18px;
+      }
+    }
+    &-star {
+      svg {
+        font-size: 18px;
+        color: #ffab2e;
+        margin-inline: 0.5rem;
+        @include breakpoint-down(small) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.contactUs {
+  padding: 5rem 20rem;
+
+  @media screen and (max-width: 1700px) {
+    padding: 5rem 5rem;
+  }
+  @include breakpoint-down(medium) {
+    padding: 5rem 4rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 2rem;
+  }
+  &__card {
+    background-color: #0e1035;
+    border-radius: 30px;
+    width: 100%;
+    height: 422px;
+    padding: 5rem 3rem;
+    background-position: top right;
+    position: relative;
+    @include breakpoint-down(medium) {
+      height: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 700px;
+      height: 100%;
+      background-image: url("../Assets/shadow.png");
+      background-repeat: no-repeat;
+    }
+    &-content {
+      display: flex;
+      z-index: 100;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      position: relative;
+      h2 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 46.2645px;
+        line-height: 120%;
+        color: #ffffff;
+        @include breakpoint-down(medium) {
+          font-size: 3.5rem;
+        }
+        @include breakpoint-down(small) {
+          font-size: 2.5rem;
+        }
+      }
+      &-btn {
+        background-color: #fff;
+        border-radius: 30px;
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 140%;
+        color: #0e1035;
+        padding: 2.5rem 5rem;
+        border: 2px solid #fff;
+        &:hover {
+          background: transparent;
+          color: #fff;
+        }
+        @include breakpoint-down(medium) {
+          font-size: 20px;
+          padding: 1rem 2rem;
+        }
+        @include breakpoint-down(small) {
+          font-size: 18px;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}

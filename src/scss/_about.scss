@@ -1,0 +1,101 @@
+.about__info {
+  padding: 10rem 20rem;
+  @media screen and (max-width: 1700px) {
+    padding: 10rem 5rem;
+  }
+  @include breakpoint-down(medium) {
+    padding: 8rem 4rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 2rem;
+  }
+  &-heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #232323;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    @include breakpoint-down(medium) {
+      font-size: 4rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 3rem;
+    }
+  }
+  &-text {
+    p {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: #0e1035;
+      margin-bottom: 2rem;
+      width: 1305px;
+      @media screen and (max-width: 1310px) {
+        width: 100%;
+      }
+    }
+  }
+}
+.about__contact {
+  @include breakpoint-down(medium) {
+    flex-direction: column-reverse !important;
+  }
+  h2 {
+    font-size: 40px;
+    margin-bottom: 5rem;
+    @include breakpoint-down(small) {
+      font-size: 3rem;
+    }
+  }
+}
+.contactUs__card-content {
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+    input {
+      width: 610px;
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #f5f5f5;
+      margin-bottom: 3rem;
+      padding-bottom: 1rem;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 140%;
+      color: #ffffff;
+      @include breakpoint-down(medium) {
+        width: 100%;
+      }
+      @include breakpoint-down(small) {
+        font-size: 18px;
+      }
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+  &-info {
+    @include breakpoint-down(medium) {
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+  }
+}

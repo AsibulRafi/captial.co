@@ -1,0 +1,144 @@
+.terms {
+  padding: 10rem 20rem;
+  @media screen and (max-width: 1700px) {
+    padding: 10rem 5rem;
+  }
+  @include breakpoint-down(medium) {
+    padding: 8rem 4rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 2rem;
+  }
+  &__heading {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    text-align: center;
+    color: #2f80ed;
+    margin-bottom: 5rem;
+    @include breakpoint-down(medium) {
+      font-size: 4.5rem;
+    }
+    @include breakpoint-down(small) {
+      font-size: 3.5rem;
+      line-height: 45px;
+    }
+  }
+  &__line {
+    border: 1px solid #2f80ed;
+    margin-block: 5rem;
+    @include breakpoint-down(small) {
+      margin-block: 3rem;
+    }
+  }
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 2rem;
+    @include breakpoint-down(small) {
+      font-size: 16px;
+    }
+  }
+  img {
+    width: 100%;
+    margin-block: 5rem;
+  }
+  table {
+    width: 100%;
+    margin-block: 5rem;
+    border-spacing: 0;
+  }
+
+  th {
+    border-bottom: 1px solid black;
+    padding: 2rem 0rem;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #f2f2f2;
+    background: #2f80ed;
+  }
+
+  td {
+    text-align: center;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid #000;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434343;
+  }
+  ul {
+    margin-left: 2rem;
+    li {
+      margin-bottom: 2rem;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: #434343;
+    }
+  }
+  h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 130%;
+    color: #2f80ed;
+    margin-bottom: 2rem;
+    @include breakpoint-down(small) {
+      font-size: 22px;
+    }
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+
+    &__section {
+      flex-basis: 45%;
+      h2 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 130%;
+        color: #2f80ed;
+        margin-bottom: 2rem;
+        @include breakpoint-down(small) {
+          font-size: 22px;
+        }
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        margin-bottom: 2rem;
+        @include breakpoint-down(small) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

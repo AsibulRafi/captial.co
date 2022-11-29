@@ -1,0 +1,254 @@
+header {
+  .open {
+    > span:first-child {
+      background-color: #fff;
+      transform: rotate(45deg);
+    }
+    > span:nth-child(2) {
+      opacity: 0;
+    }
+    > span:last-child {
+      background-color: #fff;
+      transform: rotate(-45deg);
+    }
+  }
+  .nav {
+    background-color: #fff;
+    padding: 4rem 10rem;
+    @include breakpoint-down(medium) {
+      padding: 4rem 6rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 4rem 3rem;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include breakpoint-down(medium) {
+        flex-direction: row-reverse;
+      }
+    }
+    &__hamburger {
+      cursor: pointer;
+      z-index: 100;
+      > span {
+        display: block;
+        width: 38px;
+        height: 4px;
+        border-radius: 60px;
+        background-color: #2f80ed;
+        transition: all 300ms ease-in-out;
+        transform-origin: 8px 3px;
+        z-index: 90;
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    &__logo {
+      margin-top: 1rem;
+      a {
+        img {
+          @include breakpoint-down(small) {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__btns {
+      display: flex;
+      align-items: center;
+      @include breakpoint-down(medium) {
+        display: none;
+      }
+      .log-in,
+      .open-acc {
+        border: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        background-color: #f5f5fa;
+        box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5),
+          5px 5px 10px rgba(170, 170, 204, 0.25),
+          10px 10px 20px rgba(170, 170, 204, 0.5), -10px -10px 20px #ffffff;
+        border-radius: 40px;
+        outline: none;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+      }
+      .log-in {
+        margin-right: 2rem;
+      }
+    }
+  }
+  .nav__links {
+    position: absolute;
+    width: 475px;
+    top: 0;
+
+    bottom: 0;
+    z-index: 70;
+    background: #2f80ed;
+    @include breakpoint-down(medium) {
+      right: 0;
+    }
+    .logoOpen {
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &-wrapper {
+      margin: 15rem 0rem 0rem 9rem;
+      @include breakpoint-down(medium) {
+        margin: 10rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    &-lists {
+      list-style-type: none;
+      .mb-nav__btns {
+        display: none;
+        .log-in,
+        .open-acc {
+          border: none;
+          font-family: "Poppins", sans-serif;
+          font-weight: 700;
+          background-color: #f5f5fa;
+          border-radius: 20px;
+          outline: none;
+          font-size: 2rem;
+          padding: 1rem 2rem;
+        }
+        .log-in {
+          margin-bottom: 2rem;
+        }
+        @include breakpoint-down(medium) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      li {
+        margin-bottom: 2rem;
+        a {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 140%;
+          color: #fff;
+          @include breakpoint-down(small) {
+            font-size: 20px;
+          }
+          &:hover {
+            color: #0e1035;
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  padding: 10rem 20rem 5rem;
+  @media screen and (max-width: 1700px) {
+    padding: 10rem 5rem 5rem;
+  }
+  @include breakpoint-down(medium) {
+    padding: 8rem 4rem 5rem;
+  }
+  @include breakpoint-down(small) {
+    padding: 5rem 2rem;
+  }
+  &__logo {
+    margin-bottom: 5rem;
+    img {
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    @include breakpoint-down(medium) {
+      flex-direction: column-reverse;
+    }
+    &-risk {
+      flex-basis: 30%;
+      h2 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        color: #0e1035;
+        margin-bottom: 2rem;
+        @include breakpoint-down(small) {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #0e1035;
+        @include breakpoint-down(small) {
+          font-size: 16px;
+        }
+      }
+    }
+    &-links {
+      flex-basis: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      @include breakpoint-down(small) {
+        flex-direction: column;
+      }
+      &-single {
+        display: flex;
+        flex-direction: column;
+        @include breakpoint-down(small) {
+          margin-bottom: 2rem;
+          justify-content: center;
+          text-align: center;
+        }
+        h4 {
+          font-family: "Inter";
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 140%;
+          color: #0e1035;
+          margin-bottom: 2rem;
+        }
+        a {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          color: #0e1035;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  &__copyright {
+    text-align: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+  }
+}
